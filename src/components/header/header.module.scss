@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 65px 70px 0 70px;
+}
+
+.header {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+.logo {
+  max-width: 160px;
+}
+
+.burger {
+  width: fit-content;
+  display: none;
+  @media screen and (max-width: $phone) {
+    display: block;
+  }
+}

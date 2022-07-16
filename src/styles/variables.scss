@@ -1,0 +1,56 @@
+// * COLORS
+$c-black: #000;
+$c-white: #fff;
+$c-white-shades: #EDEDED;
+$c-primary: #5468E7;
+$c-primary-shades: #D1ECFD;
+$c-secondary: #C897E4;
+$c-secondary-shades: #E8BEFF;
+$c-dark: #232340;
+$c-dark-shades: #323259;
+$c-accent-1: #FFC7DF;
+$c-accent-2: #FFBA79;
+$c-accent-3: #9A97ED;
+$c-accent-1-shades: #FFADD0;
+$c-accent-2-shades: #FFCE79;
+$c-accent-3-shades: #908CFF;
+$c-text-light-mode: #606060;
+$c-text-dark-mode: #8B8B8B;
+$c-text-deactive: #ADADAD;
+$c-line-decoration-1: #D1ECFD;
+$c-line-decoration-2: #232340;
+$c-line-decoration-3: #9A97ED;
+$c-border: #D8D8D8;
+$c-gradient-1: linear-gradient(360deg, rgba(255, 255, 255, 0.0001) 0%, rgba(237, 229, 240, 0.504289) 100%);
+$c-gradient-2: linear-gradient(180deg, #3A8FFF 0%, #0837AE 100%);
+$c-gradient-3: linear-gradient(0deg, rgba(50, 50, 89, 0.0001) 0%, #323259 72.97%);
+
+// * Font
+$f-base: 'Source Sans Pro', sans-serif;
+
+// * Font size
+$fs-caption-small: 12px;
+$fs-caption: 14px;
+$fs-base: 16px;
+$fs-menu: 18px;
+$fs-title: 20px;
+$fs-heading-6: 24px;
+$fs-heading-5: 35px;
+$fs-heading-4: 40px;
+$fs-heading-3: 48px;
+$fs-heading-2: 64px;
+$fs-heading-1: 76px;
+$fs-display-2: 84px;
+$fs-display-1: 110px;
+
+// * Box Shadow
+$bs-normal: 0px 6px 8px rgba(216, 216, 216, 0.5);;
+
+// * Media Queries: Breakpoints
+$small: 320px;
+$phone: 480px;
+$tablet: 768px;
+$castom: 915px;
+$desktop: 1024px;
+$screen: 1400px;
+$large: 1920px;
