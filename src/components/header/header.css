@@ -1,0 +1,15 @@
+header {
+  position: fixed;
+  z-index: 999;
+}
+
+.header-section {
+  width: 100%;
+  padding: 65px 70px 0 70px;
+}
+
+.is-sticky {
+  background-color: #fff;
+  padding: 20px 70px;
+  transition: 1s;
+}

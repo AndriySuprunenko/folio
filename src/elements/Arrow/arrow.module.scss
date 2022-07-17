@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.arrow {
+  cursor: pointer;
+}
+
+.img {
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  &:hover {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -28,6 +28,13 @@ $c-gradient-3: linear-gradient(0deg, rgba(50, 50, 89, 0.0001) 0%, #323259 72.97%
 // * Font
 $f-base: 'Source Sans Pro', sans-serif;
 
+// * Font Wight
+$fw-light: 200;
+$fw-normal: 400;
+$fw-ser: 600;
+$fw-bold: 700;
+$fw-max-bold: 900;
+
 // * Font size
 $fs-caption-small: 12px;
 $fs-caption: 14px;
@@ -35,13 +42,14 @@ $fs-base: 16px;
 $fs-menu: 18px;
 $fs-title: 20px;
 $fs-heading-6: 24px;
-$fs-heading-5: 35px;
+$fs-heading-5: 32px;
 $fs-heading-4: 40px;
 $fs-heading-3: 48px;
 $fs-heading-2: 64px;
 $fs-heading-1: 76px;
 $fs-display-2: 84px;
 $fs-display-1: 110px;
+$fs-big: 200px;
 
 // * Box Shadow
 $bs-normal: 0px 6px 8px rgba(216, 216, 216, 0.5);;

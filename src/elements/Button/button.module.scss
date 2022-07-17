@@ -1,0 +1,47 @@
+@import '../../styles/variables';
+
+.button {
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 15px;
+  font-size: $fs-menu;
+  font-weight: bold;
+  width: 180px;
+  @media screen and (max-width: $tablet) {
+    font-size: $fs-base;
+    font-weight: bold;
+    width: 160px;
+  }
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
+  &__black {
+    background-color: $c-line-decoration-2;
+    color: $c-white;
+    border: none;
+    &:hover {
+      background-color: $c-primary;
+      transition: .3s;
+    }
+    &:active {
+      background-color: $c-white-shades;
+    }
+  }
+  &__blue {
+    background-color: $c-primary;
+    color: $c-white;
+    border: 1px solid transparent;
+    &:hover {
+      background-color: $c-line-decoration-2;
+      border: 1px solid $c-white;
+      transition: .3s;
+    }
+    &:active {
+      background-color: $c-white-shades;
+    }
+  }
+}
+
+.span {
+  cursor: pointer;
+}

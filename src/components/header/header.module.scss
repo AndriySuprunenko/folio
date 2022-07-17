@@ -5,15 +5,40 @@
   justify-content: space-between;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 65px 70px 0 70px;
-}
-
-.header {
-  width: 100%;
 }
 
 .nav {
   display: flex;
+  justify-content: center;
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: $c-text-dark-mode;
+    font-weight: $fw-ser;
+    font-size: $fs-menu;
+    cursor: pointer;
+    &:active {
+      color: $c-primary;
+    }
+    &:hover {
+      color: $c-primary;
+    }
+    &:focus {
+      color: $c-primary;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: $fs-base;
+    }
+  }
+  &__item {
+    height: fit-content;
+    margin: 10px 30px;
+    @media screen and (max-width: $tablet) {
+      margin: 10px 20px;
+    }
+  }
 }
 
 .logo {
