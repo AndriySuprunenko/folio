@@ -11,6 +11,10 @@ const Button = ({text, classes=ButtonTypes.BLACK , type='button'}) => {
       typeClass = styles.button__blue;
       break;
     }
+    case ButtonTypes.WHITE: {
+      typeClass = styles.button__white;
+      break;
+    }
     default: {
       typeClass = styles.button__black;
     }

@@ -1,0 +1,285 @@
+@import '../../styles/variables';
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 80px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section {
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 130px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  z-index: 3;
+}
+
+.subtitle {
+  &_num {
+    color: $c-primary;
+    font-size: $fs-menu;
+    margin-right: 20px;
+  }
+  &_text {
+    color: $c-primary;
+    font-size: $fs-menu;
+  }
+}
+
+.text {
+  max-width: 670px;
+  z-index: 3;
+}
+
+.title {
+  color: $c-dark;
+  font-size: $fs-display-2;
+}
+
+.arrow {
+  transform: rotate(180deg);
+}
+
+.arrows {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  z-index: 3;
+}
+
+.button {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+
+.text_header {
+  font-size: $fs-menu;
+  color: $c-text-light-mode;
+  margin-top: 40px;
+  max-width: 470px;
+}
+
+.block_img {
+  position: relative;
+  padding-top: 100px;
+}
+
+.text_section {
+  position: absolute;
+  top: 250px;
+  z-index: 99;
+  &_title {
+    font-size: $fs-caption;
+    color: $c-white;
+    background-color: $c-line-decoration-3;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 70px;
+    z-index: 99;
+  }
+  &_subtitle {
+    color: $c-black;
+    font-size: $fs-heading-4;
+    max-width: 470px;
+    margin-top: 25px;
+    z-index: 99;
+  }
+  &_text {
+    font-size: $fs-menu;
+    color: $c-text-light-mode;
+    max-width: 205px;
+    margin-top: 30px;
+  }
+}
+
+.image_section {
+  position: relative;
+  width: 670px;
+  height: 520px;
+  background-color: $c-primary-shades;
+  border-radius: 30px;
+  top: 100px;
+  left: 250px;
+  z-index: 3;
+}
+
+.img2 {
+  position: absolute;
+  top: -250px;
+  left: 350px;
+  z-index: 1;
+}
+
+.block_3 {
+  position: relative;
+}
+
+.line {
+  position: absolute;
+  width: 500px;
+  top: -450px;
+  &_2 {
+    position: absolute;
+    top: 500px;
+    left: 400px;
+    width: 500px;
+    transform: rotate(45deg);
+  }
+}
+
+.carts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+}
+
+.cart_blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart {
+  width: fit-content;
+  &:nth-child(1) {
+    margin-right: 20px;
+  }
+  &:nth-child(2) {
+    margin-left: 20px;
+  }
+  &_1 {
+    margin-top: 300px;
+  }
+  &_3 {
+    margin-top: 300px;
+  }
+  &_title {
+    font-size: $fs-heading-4;
+    color: $c-dark;
+  }
+  &_text {
+    font-size: $fs-menu;
+    color: $c-text-dark-mode;
+    max-width: 365px;
+  }
+  &_block {
+    position: relative;
+    border-radius: 30px;
+    margin: 40px 0;
+    &_1 {
+      width: 470px;
+      height: 500px;
+      background-color: $c-accent-2-shades;
+    }
+    &_2 {
+      width: 365px;
+      height: 380px;
+      background-color: $c-secondary-shades;
+    }
+    &_3 {
+      width: 365px;
+      height: 505px;
+      background-color: $c-accent-1-shades;
+    }
+    &_4 {
+      width: 465px;
+      height: 505px;
+      background-color: $c-primary-shades;
+    }
+  }
+}
+
+.cart_img1 {
+  position: absolute;
+  top: 20px;
+  left: -15px;
+}
+
+.cart_img2 {
+  position: absolute;
+  top: 50px;
+  left: -200px;
+}
+
+.cart_img3 {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+.cart_img4 {
+  position: absolute;
+  width: 300px;
+  top: 70px;
+  left: 80px;
+}
+
+
+.block_4 {
+  margin-top: 130px;
+  position: relative;
+  &_container {
+    position: absolute;
+    display: flex;
+    padding: 40px;
+    border-radius: 30px;
+    background-color: $c-primary;
+    z-index: 5;
+  }
+  &_logo {
+    position: absolute;
+    top: 140px;
+    left: 50px;
+    width: 40px;
+    height: 40px;
+  }
+  &_img {
+    width: 800px;
+  }
+  &_title {
+    font-size: $fs-menu;
+    color: $c-white;
+  }
+  &_span {
+    margin-right: 25px;
+  }
+  &_subtitle {
+    color: $c-white;
+    font-size: $fs-heading-2;
+    max-width: 370px;
+    margin: 25px 0 50px 0;
+  }
+  &_text {
+    margin: 50px;
+  }
+  &_decor {
+    position: absolute;
+    top: 50px;
+    left: 850px;
+    width: 400px;
+    height: 625px;
+    &_2 {
+      height: 525px;
+      width: 200px;
+      background-color: $c-line-decoration-1;
+      border-radius: 30px;
+      position: absolute;
+      left: -50px;
+      top: 50px;
+      z-index: 1;
+    }
+  }
+}

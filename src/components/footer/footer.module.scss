@@ -1,0 +1,96 @@
+@import '../../styles/variables';
+
+.footer {
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 190px;
+  margin-top: 130px;
+}
+
+.text {
+  z-index: 99;
+  margin-top: 50px;
+  color: $c-text-dark-mode;
+  font-size: $fs-menu;
+  width: fit-content;
+}
+
+.nav {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: $c-text-dark-mode;
+    font-weight: $fw-ser;
+    font-size: $fs-menu;
+    cursor: pointer;
+    &:active {
+      color: $c-primary;
+    }
+    &:hover {
+      color: $c-primary;
+    }
+    &:focus {
+      color: $c-primary;
+    }
+    @media screen and (max-width: $tablet) {
+      font-size: $fs-base;
+    }
+  }
+  &__item {
+    height: fit-content;
+    margin: 10px 30px;
+    @media screen and (max-width: $tablet) {
+      margin: 10px 20px;
+    }
+  }
+}
+
+.block {
+  display: flex;
+  padding: 50px 0;
+  margin-top: 50px;
+  border-top: 1px solid $c-text-dark-mode;
+  &_l {
+    color: $c-text-dark-mode;
+  }
+  &_r {
+    display: flex;
+    justify-content: flex-end;
+    &_icon {
+      width: fit-content;
+      margin-left: 50px;
+      cursor: pointer;
+    }
+    &_icons {
+      cursor: pointer;
+    }
+    &_text {
+      width: fit-content;
+      color: $c-primary;
+      cursor: pointer;
+    }
+  }
+}
+
+.line {
+  position: absolute;
+  top: 0;
+  left: 700px;
+  width: fit-content;
+}

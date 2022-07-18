@@ -1,0 +1,116 @@
+@import '../../styles/variables';
+
+.jobs {
+  width: 100%;
+  padding-top: 700px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: rgba($color: $c-accent-3, $alpha: 0.1);
+  padding: 130px;
+}
+
+.line {
+  width: fit-content;
+  position: absolute;
+  top: 0;
+  left: 300px;
+}
+
+.content {
+  display: flex;
+  z-index: 99;
+  &_card {
+    z-index: 99;
+  }
+  &_logo {
+    width: 24px;
+    height: 24px;
+    margin-right: 75px;
+  }
+  &_text {
+    &_title {
+      font-size: $fs-menu;
+      color: $c-primary;
+    }
+    &_span {
+      margin-right: 20px;
+    }
+    &_subtitle {
+      font-size: $fs-display-1;
+      font-weight: $fw-ser;
+      color: $c-dark;
+      margin-top: 25px;
+    }
+    &_text {
+      font-size: $fs-menu;
+      color: $c-text-dark-mode;
+      margin-top: 40px;
+      max-width: 370px;
+    }
+    &_link {
+      max-width: 160px;
+      margin-top: 70px;
+      cursor: pointer;
+      &_arrow {
+        width: 50px;
+        height: 50px;
+        transform: rotate(-90deg);
+        cursor: pointer;
+        &:hover {
+          width: 40px;
+          height: 40px;
+          margin: 5px;
+          transition: 0.3s;
+        }
+        &:active {
+          width: 20px;
+          height: 20px;
+          margin: 15px;
+        }
+      }
+    }
+  }
+}
+
+.button {
+  color: $c-dark;
+  font-size: $fs-heading-5;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: transparent;
+  &:hover{
+    background-color: $c-primary;
+    transition: .3s;
+    color: $c-white;
+  }
+  &:active {
+    background-color: $c-white-shades;
+  }
+}
+
+.card {
+  background-color: $c-white;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: $c-dark;
+  padding: 60px;
+  &:hover {
+    background-color: $c-dark;
+    color: $c-white;
+    transition: 0.3s;
+  }
+  &_title {
+    font-size: $fs-heading-5;
+  }
+  &_text {
+    font-size: $fs-menu;
+    color: $c-text-dark-mode;
+  }
+}
