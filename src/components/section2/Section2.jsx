@@ -9,7 +9,7 @@ import Oval from '../../assets/png/Oval.png';
 
 const Section2 = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='work'>
       <div className={styles.container}>
         <div className={styles.line}>
           <svg

@@ -37,22 +37,22 @@ const Footer = () => {
         <nav className={styles.navigation}>
           <ul className={styles.nav}>
             <li className={styles.nav__item}>
-              <a className={styles.nav__link} href="#saq-1">
+              <a className={styles.nav__link} href="#about">
                 About
               </a>
             </li>
             <li className={styles.nav__item}>
-              <a className={styles.nav__link} href="#saq-1">
+              <a className={styles.nav__link} href="#work">
                 Work
               </a>
             </li>
             <li className={styles.nav__item}>
-              <a className={styles.nav__link} href="#saq-1">
+              <a className={styles.nav__link} href="#services">
                 Services
               </a>
             </li>
             <li className={styles.nav__item}>
-              <a className={styles.nav__link} href="#saq-1">
+              <a className={styles.nav__link} href="#jobs">
                 Jobs
               </a>
             </li>

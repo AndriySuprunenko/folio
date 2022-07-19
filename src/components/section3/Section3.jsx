@@ -15,7 +15,7 @@ import decor from '../../assets/png/banner-bg.png';
 
 const Section3 = () => {
   return (
-    <section className={styles.section}>
+    <section className={styles.section} id='services'>
       <div className={styles.container}>
         {/* Block */}
         <div className={styles.block}>
@@ -26,7 +26,7 @@ const Section3 = () => {
           {/* Text */}
           <div className={styles.text}>
             <div className={styles.subtitle}>
-              <span className={styles.subtitle_num}>02</span>
+              <span className={styles.subtitle_num}>04</span>
               <span className={styles.subtitle_text}>Who We Do</span>
             </div>
             <div className={styles.title}>Our Partnerships</div>

@@ -15,3 +15,16 @@
     padding-bottom: 0;
   }
 }
+
+.nav__link {
+  font-size: $fs-heading-5;
+  text-decoration: none;
+  color: $c-menu-burger;
+  &:hover {
+    color: $c-white;
+  }
+}
+
+.nav__item {
+  margin-top: 50px;
+}

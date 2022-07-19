@@ -28,10 +28,10 @@ const Header = () => {
         </div>
         <nav className={styles.navigation}>
           <ul className={styles.nav}>
-            <li className={styles.nav__item}><a className={styles.nav__link} href="#saq-1">About</a></li>
-            <li className={styles.nav__item}><a className={styles.nav__link} href="#saq-1">Work</a></li>
-            <li className={styles.nav__item}><a className={styles.nav__link} href="#saq-1">Services</a></li>
-            <li className={styles.nav__item}><a className={styles.nav__link} href="#saq-1">Jobs</a></li>
+            <li className={styles.nav__item}><a className={styles.nav__link} href="#about">About</a></li>
+            <li className={styles.nav__item}><a className={styles.nav__link} href="#work">Work</a></li>
+            <li className={styles.nav__item}><a className={styles.nav__link} href="#services">Services</a></li>
+            <li className={styles.nav__item}><a className={styles.nav__link} href="#jobs">Jobs</a></li>
           </ul>
         </nav>
         <div className={styles.burger}>

@@ -9,7 +9,7 @@ import { ButtonTypes } from '../../types/Button';
 
 const Slider = () => {
   return (
-    <section className={styles.slider}>
+    <section className={styles.slider} id='about'>
       <div className={styles.container}>
         {/* Before */}
         <div className={styles.backg}>

@@ -4,7 +4,7 @@ import arrow from '../../assets/svg/Style 1.svg';
 
 const Jobs = () => {
   return (
-    <section className={styles.jobs}>
+    <section className={styles.jobs} id='jobs'>
       <div className={styles.container}>
         <div className={styles.line}>
           <svg
