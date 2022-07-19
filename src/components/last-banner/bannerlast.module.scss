@@ -10,6 +10,9 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 70px 0 70px;
+  @media screen and (max-width: $tablet) {
+    padding: 0 40px 0 40px;
+  }
 }
 
 .content {
@@ -20,9 +23,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 130px;
-    padding-bottom: 180px;
+    padding: 130px 40px 180px 40px;
     border-bottom: 1px solid $c-white;
+    @media screen and (max-width: $tablet) {
+      padding: 40px;
+    }
     &_logo {
       width: 24px;
       height: 24px;
@@ -49,9 +54,19 @@
       font-size: $fs-heading-2;
       width: fit-content;
       border-right: 1px solid $c-white;
+      @media screen and (max-width: $tablet) {
+        margin: 0 auto;
+        border-right: 1px solid $c-primary;
+        padding: 40px;
+        font-size: $fs-heading-5;
+        width: fit-content;
+      }
     }
     &_r {
       padding: 175px 130px;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
       &_img {
         width: 105px;
         height: 105px;
@@ -66,8 +81,15 @@
 
 .line {
   position: absolute;
-  width: fit-content;
+  width: 500px;
   top: 0;
   left: 200px;
   opacity: 0.5;
+  @media screen and (max-width: $tablet) {
+    width: 300px;
+    left: 100px;
+  }
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
 }

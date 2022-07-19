@@ -7,6 +7,20 @@
   &:last-child {
     margin-bottom: 0;
   }
+  @media screen and (max-width: $phone) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &_1 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 80px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .slider {
@@ -19,11 +33,22 @@
   margin: 0 auto;
   background-color: $c-dark;
   padding: 130px;
+  @media screen and (max-width: $tablet) {
+    padding: 40px;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 20px;
+  }
 }
 
 .logo {
   width: 32px;
   height: 32px;
+  margin-right: 20px;
+  @media screen and (max-width: $phone) {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
 }
 
 .subtitle {
@@ -31,10 +56,23 @@
     color: $c-text-dark-mode;
     font-size: $fs-menu;
     margin-right: 20px;
+    @media screen and (max-width: $tablet) {
+      font-size: $fs-base;
+      margin-right: 20px;
+    }
+    @media screen and (max-width: $phone) {
+      font-size: $fs-base;
+    }
   }
   &_text {
     color: $c-white;
     font-size: $fs-menu;
+    @media screen and (max-width: $tablet) {
+      font-size: $fs-base;
+    }
+    @media screen and (max-width: $phone) {
+      font-size: $fs-base;
+    }
   }
 }
 
@@ -46,6 +84,13 @@
 .title {
   color: $c-white;
   font-size: $fs-heading-2;
+  @media screen and (max-width: $tablet) {
+    font-size: $fs-heading-4;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: $phone) {
+    font-size: $fs-heading-6;
+  }
 }
 
 .arrow {
@@ -65,9 +110,13 @@
   border-radius: 50%;
   background-color: transparent;
   margin: 15px;
+  @media screen and (max-width: $tablet) {
+    width: 34px;
+    height: 34px;
+  }
   &:hover {
     background-color: $c-primary;
-    transition: .3s;
+    transition: 0.3s;
   }
   &:active {
     background-color: $c-white-shades;
@@ -76,18 +125,34 @@
 
 .line {
   position: absolute;
-  width: fit-content;
+  width: 700px;
   top: 0;
   left: 0;
   z-index: 1;
+  @media screen and (max-width: $tablet) {
+    width: 500px;
+  }
+  @media screen and (max-width: $phone) {
+    width: 300px;
+  }
 }
 
 .backg {
   position: absolute;
-  width: fit-content;
+  max-width: 800px;
   top: -50px;
-  left: 638px;
+  left: calc(100% - 800px);
   z-index: 2;
+  @media screen and (max-width: $tablet) {
+    max-width: 500px;
+    top: -20px;
+    left: calc(100% - 500px);
+  }
+  @media screen and (max-width: $phone) {
+    max-width: 300px;
+    top: -10px;
+    left: calc(100% - 300px);
+  }
 }
 
 .date {
@@ -108,6 +173,12 @@
 .cart {
   width: 970px;
   z-index: 3;
+  @media screen and (max-width: $tablet) {
+    max-width: 500px;
+  }
+  @media screen and (max-width: $phone) {
+    max-width: 300px;
+  }
 }
 
 .lines1 {
@@ -124,11 +195,20 @@
   top: 0;
   left: 60px;
   z-index: 5;
+  @media screen and (max-width: $phone) {
+    width: 100px;
+  }
 }
 
 .vertical_line {
   width: 2px;
   height: 80px;
+  @media screen and (max-width: $tablet) {
+    margin-right: 20px;
+  }
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
 }
 
 .text_block {
@@ -137,7 +217,7 @@
 
 .char {
   width: fit-content;
-  &_big{
+  &_big {
     font-size: $fs-big;
     color: $c-white;
   }

@@ -9,8 +9,8 @@ const Bannerlast = () => {
         <div className={styles.content}>
           <div className={styles.line}>
             <svg
-              width="643"
-              height="821"
+              width="100%"
+              height="100%"
               viewBox="0 0 643 821"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

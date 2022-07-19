@@ -64,8 +64,8 @@ const Section3 = () => {
         <div className={styles.block_3}>
           <div className={styles.line}>
             <svg
-              width="642"
-              height="643"
+              width="100%"
+              height="100%"
               viewBox="0 0 642 643"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,8 +79,8 @@ const Section3 = () => {
           </div>
           <div className={styles.line_2}>
             <svg
-              width="748"
-              height="487"
+              width="100%"
+              height="100%"
               viewBox="0 0 748 487"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

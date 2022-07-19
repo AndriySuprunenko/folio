@@ -13,8 +13,8 @@ const Section2 = () => {
       <div className={styles.container}>
         <div className={styles.line}>
           <svg
-            width="643"
-            height="821"
+            width="100%"
+            height="100%"
             viewBox="0 0 643 821"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -47,8 +47,8 @@ const Section2 = () => {
               <button className={styles.button}>
                 <span>
                   <svg
-                    width="64"
-                    height="64"
+                    width="100%"
+                    height="100%"
                     viewBox="0 0 64 64"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,8 +76,8 @@ const Section2 = () => {
                 <span>
                   <svg
                     className={styles.arrow}
-                    width="64"
-                    height="64"
+                    width="100%"
+                    height="100%"
                     viewBox=" 0 0 64 64"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -142,8 +142,8 @@ const Section2 = () => {
         <div className={styles.block_phone}>
           <div className={styles.line2}>
             <svg
-              width="518"
-              height="781"
+              width="100%"
+              height="100%"
               viewBox="0 0 518 781"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"

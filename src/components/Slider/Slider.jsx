@@ -14,8 +14,8 @@ const Slider = () => {
         {/* Before */}
         <div className={styles.backg}>
           <svg
-            width="802"
-            height="1052"
+            width="100%"
+            height="100%"
             viewBox="0 0 802 1052"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -43,8 +43,8 @@ const Slider = () => {
         </div>
         <div className={styles.line}>
           <svg
-            width="748"
-            height="487"
+            width="100%"
+            height="100%"
             viewBox="0 0 748 487"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -90,8 +90,8 @@ const Slider = () => {
               <button className={styles.button}>
                 <span>
                   <svg
-                    width="64"
-                    height="64"
+                    width="100%"
+                    height="100%"
                     viewBox="0 0 64 64"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -119,8 +119,8 @@ const Slider = () => {
                 <span>
                   <svg
                     className={styles.arrow}
-                    width="64"
-                    height="64"
+                    width="100%"
+                    height="100%"
                     viewBox=" 0 0 64 64"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -146,7 +146,7 @@ const Slider = () => {
           </div>
         </div>
         {/* Block */}
-        <div className={styles.block}>
+        <div className={styles.block_1}>
           <div className={styles.date}>
             <span className={styles.date_year}>2017</span>
             <span className={styles.date_year}>2018</span>

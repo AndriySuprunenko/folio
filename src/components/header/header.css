@@ -13,3 +13,12 @@ header {
   padding: 20px 70px;
   transition: 1s;
 }
+
+@media screen and (max-width: 768px) {
+  .header-section {
+    padding: 35px 40px 0 40px;
+  }
+  .is-sticky {
+    padding: 10px 40px;
+  }
+}

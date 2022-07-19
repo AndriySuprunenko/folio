@@ -11,6 +11,7 @@
   position: relative;
   max-width: 1440px;
   margin: 0 auto;
+  padding: 40px;
 }
 
 .logo {
@@ -66,16 +67,34 @@
   padding: 50px 0;
   margin-top: 50px;
   border-top: 1px solid $c-text-dark-mode;
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 20px;
+  }
   &_l {
     color: $c-text-dark-mode;
   }
   &_r {
     display: flex;
     justify-content: flex-end;
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-top: 20px;
+    }
     &_icon {
       width: fit-content;
       margin-left: 50px;
       cursor: pointer;
+      @media screen and (max-width: $tablet) {
+        display: flex;
+        width: 16px;
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
     &_icons {
       cursor: pointer;
@@ -92,5 +111,9 @@
   position: absolute;
   top: 0;
   left: 700px;
-  width: fit-content;
+  width: 300px;
+  @media screen and (max-width: $tablet) {
+    width: 100px;
+    left: 200px;
+  }
 }

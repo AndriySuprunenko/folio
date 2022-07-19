@@ -8,6 +8,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .section {
@@ -19,12 +23,21 @@
   max-width: 1440px;
   margin: 0 auto;
   padding: 130px;
+  @media screen and (max-width: $tablet) {
+    padding: 40px;
+  }
+  @media screen and (max-width: $phone) {
+    padding: 20px;
+  }
 }
 
 .logo {
   width: 32px;
   height: 32px;
   z-index: 3;
+  @media screen and (max-width: $tablet) {
+    margin-bottom: 20px;
+  }
 }
 
 .subtitle {
@@ -47,6 +60,9 @@
 .title {
   color: $c-dark;
   font-size: $fs-display-2;
+  @media screen and (max-width: $tablet) {
+    font-size: $fs-heading-4;
+  }
 }
 
 .arrow {
@@ -64,6 +80,9 @@
   width: fit-content;
   display: flex;
   align-items: center;
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 
 .text_header {
@@ -76,12 +95,24 @@
 .block_img {
   position: relative;
   padding-top: 100px;
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0;
+  }
 }
 
 .text_section {
   position: absolute;
   top: 250px;
   z-index: 99;
+  @media screen and (max-width: $tablet) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
   &_title {
     font-size: $fs-caption;
     color: $c-white;
@@ -103,18 +134,26 @@
     color: $c-text-light-mode;
     max-width: 205px;
     margin-top: 30px;
+    @media screen and (max-width: $tablet) {
+      max-width: 305px;
+    }
   }
 }
 
 .image_section {
   position: relative;
-  width: 670px;
-  height: 520px;
+  max-width: 670px;
+  max-height: 520px;
   background-color: $c-primary-shades;
   border-radius: 30px;
   top: 100px;
   left: 250px;
   z-index: 3;
+  @media screen and (max-width: $tablet) {
+    position: static;
+    top: 0;
+    left: 0;
+  }
 }
 
 .img2 {
@@ -122,6 +161,9 @@
   top: -250px;
   left: 350px;
   z-index: 1;
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
 }
 
 .block_3 {
@@ -132,12 +174,18 @@
   position: absolute;
   width: 500px;
   top: -450px;
+  @media screen and (max-width: $phone) {
+    display: none;
+  }
   &_2 {
     position: absolute;
     top: 500px;
     left: 400px;
     width: 500px;
     transform: rotate(45deg);
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
 }
 
@@ -145,26 +193,52 @@
   display: flex;
   flex-direction: column;
   margin-top: 300px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 20px;
+  }
 }
 
 .cart_blocks {
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .cart {
   width: fit-content;
+  @media screen and (max-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+  }
   &:nth-child(1) {
     margin-right: 20px;
+    @media screen and (max-width: $tablet) {
+      margin-right: 0;
+    }
   }
   &:nth-child(2) {
     margin-left: 20px;
+    @media screen and (max-width: $tablet) {
+      margin-right: 0;
+    }
   }
   &_1 {
     margin-top: 300px;
+    @media screen and (max-width: $tablet) {
+      margin-top: 20px;
+    }
   }
   &_3 {
     margin-top: 300px;
+    @media screen and (max-width: $tablet) {
+      margin-top: 20px;
+    }
   }
   &_title {
     font-size: $fs-heading-4;
@@ -183,21 +257,37 @@
       width: 470px;
       height: 500px;
       background-color: $c-accent-2-shades;
+      @media screen and (max-width: $tablet) {
+        width: 270px;
+        height: 300px;
+      }
     }
     &_2 {
       width: 365px;
       height: 380px;
       background-color: $c-secondary-shades;
+      @media screen and (max-width: $tablet) {
+        width: 265px;
+        height: 280px;
+      }
     }
     &_3 {
       width: 365px;
       height: 505px;
       background-color: $c-accent-1-shades;
+      @media screen and (max-width: $tablet) {
+        width: 265px;
+        height: 405px;
+      }
     }
     &_4 {
       width: 465px;
       height: 505px;
       background-color: $c-primary-shades;
+      @media screen and (max-width: $tablet) {
+        width: 365px;
+        height: 405px;
+      }
     }
   }
 }
@@ -212,6 +302,9 @@
   position: absolute;
   top: 50px;
   left: -200px;
+  @media screen and (max-width: $tablet) {
+    left: 0;
+  }
 }
 
 .cart_img3 {
@@ -225,12 +318,18 @@
   width: 300px;
   top: 70px;
   left: 80px;
+  @media screen and (max-width: $tablet) {
+    top: 20px;
+    left: 20px;
+  }
 }
-
 
 .block_4 {
   margin-top: 130px;
   position: relative;
+  @media screen and (max-width: $tablet) {
+    margin-top: 50px;
+  }
   &_container {
     position: absolute;
     display: flex;
@@ -238,6 +337,11 @@
     border-radius: 30px;
     background-color: $c-primary;
     z-index: 5;
+    @media screen and (max-width: $tablet) {
+      position: static;
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   &_logo {
     position: absolute;
@@ -245,9 +349,16 @@
     left: 50px;
     width: 40px;
     height: 40px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
   }
   &_img {
-    width: 800px;
+    max-width: 800px;
+    @media screen and (max-width: $tablet) {
+      position: static;
+      max-width: 800px;
+    }
   }
   &_title {
     font-size: $fs-menu;
@@ -261,9 +372,17 @@
     font-size: $fs-heading-2;
     max-width: 370px;
     margin: 25px 0 50px 0;
+    @media screen and (max-width: $tablet) {
+      font-size: $fs-heading-4;
+    }
   }
   &_text {
     margin: 50px;
+    @media screen and (max-width: $tablet) {
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
   }
   &_decor {
     position: absolute;
@@ -271,6 +390,9 @@
     left: 850px;
     width: 400px;
     height: 625px;
+    @media screen and (max-width: $tablet) {
+      display: none;
+    }
     &_2 {
       height: 525px;
       width: 200px;
@@ -280,6 +402,9 @@
       left: -50px;
       top: 50px;
       z-index: 1;
+      @media screen and (max-width: $tablet) {
+        display: none;
+      }
     }
   }
 }
